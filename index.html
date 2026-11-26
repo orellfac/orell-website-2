@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orell Feral Animal Control | Contract Vertebrate Pest Management NSW</title>
+  <meta name="description" content="Licensed vertebrate pest control and feral animal management servicing Macarthur, Western Sydney, Southern Highlands, and Central West NSW.">
+  <style>
+    :root {
+      --primary: #1f3326;
+      --primary-light: #2d4a37;
+      --accent: #b86b28;
+      --accent-hover: #9c581e;
+      --bg-light: #f4f5f2;
+      --bg-white: #ffffff;
+      --text-dark: #1c211e;
+      --text-muted: #525c56;
+      --border: #d8ddd9;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text-dark);
+      background-color: var(--bg-light);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--primary);
+      color: #fff;
+      padding: 1rem 5%;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+
+    .logo {
+      font-size: 1.2rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .logo span {
+      color: #d69454;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1.25rem;
+    }
+
+    nav a {
+      color: #e2e8e4;
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+    }
+
+    .nav-cta {
+      background-color: var(--accent);
+      color: #fff !important;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+
+    .nav-cta:hover {
+      background-color: var(--accent-hover);
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #16241b 0%, #243b2c 100%);
+      color: #ffffff;
+      padding: 5rem 5% 4.5rem;
+      text-align: left;
+    }
+
+    .hero-inner {
+      max-width: 1050px;
+      margin: 0 auto;
+    }
+
+    .badge {
+      display: inline-block;
+      background-color: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      padding: 0.35rem 0.85rem;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-bottom: 1.2rem;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      line-height: 1.2;
+      max-width: 780px;
+      margin-bottom: 1.2rem;
+    }
+
+    .hero p {
+      font-size: 1.15rem;
+      color: #dce3de;
+      max-width: 700px;
+      margin-bottom: 2rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      background-color: var(--accent);
+      color: #ffffff;
+      padding: 0.9rem 1.8rem;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.2s;
+    }
+
+    .btn-primary:hover {
+      background-color: var(--accent-hover);
+    }
+
+    .btn-secondary {
+      display: inline-block;
+      background-color: rgba(255, 255, 255, 0.12);
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      padding: 0.85rem 1.5rem;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.2s;
+    }
+
+    .btn-secondary:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .trust-strip {
+      background-color: var(--primary-light);
+      color: #ffffff;
+      padding: 1.2rem 5%;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .trust-grid {
+      max-width: 1050px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      font-size: 0.92rem;
+    }
+
+    .trust-item strong {
+      display: block;
+      color: #e6b078;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .trust-item a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 4.5rem 5%;
+    }
+
+    .container {
+      max-width: 1050px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      font-size: 1.9rem;
+      color: var(--primary);
+      margin-bottom: 0.6rem;
+    }
+
+    .section-subtitle {
+      color: var(--text-muted);
+      max-width: 720px;
+      margin-bottom: 2.5rem;
+      font-size: 1.05rem;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: var(--bg-white);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 2rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+    }
+
+    .card h3 {
+      color: var(--primary);
+      margin-bottom: 0.8rem;
+      font-size: 1.25rem;
+    }
+
+    .species-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.65rem;
+      margin-top: 1rem;
+    }
+
+    .species-list li::before {
+      content: "✓ ";
+      color: var(--accent);
+      font-weight: bold;
+    }
+
+    .capabilities-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.85rem;
+      margin-top: 1rem;
+    }
+
+    .capabilities-list li::before {
+      content: "✓ ";
+      color: var(--accent);
+      font-weight: bold;
+    }
+
+    .permit-note {
+      margin-top: 1.2rem;
+      padding: 0.9rem;
+      background-color: #f8f6f2;
+      border-left: 3px solid var(--accent);
+      font-size: 0.9rem;
+      color: var(--text-dark);
+    }
+
+    .bg-white-section {
+      background-color: var(--bg-white);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .cred-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .cred-box {
+      padding: 1.5rem;
+      background: var(--bg-light);
+      border-radius: 6px;
+      border-left: 4px solid var(--primary);
+    }
+
+    .cred-box h4 {
+      color: var(--primary);
+      margin-bottom: 0.4rem;
+    }
+
+    .insurance-placeholder {
+      border-left-color: var(--accent);
+      background-color: #fbf9f6;
+    }
+
+    .region-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .region-card {
+      background: var(--bg-white);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 1.5rem;
+    }
+
+    .region-card h4 {
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+    }
+
+    .region-card p {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+    }
+
+    .contact-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1.3fr;
+      gap: 3rem;
+      background: var(--bg-white);
+      padding: 2.5rem;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+    }
+
+    .contact-info h3 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    .contact-info p {
+      margin-bottom: 1rem;
+      color: var(--text-muted);
+    }
+
+    .detail-block {
+      margin-top: 1.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.95rem;
+      line-height: 1.8;
+    }
+
+    .detail-block a {
+      color: var(--primary);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    form {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    label {
+      display: block;
+      font-size: 0.88rem;
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+      color: var(--text-dark);
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 0.7rem;
+      border: 1px solid #bfc7c2;
+      border-radius: 4px;
+      font-family: inherit;
+      font-size: 0.95rem;
+    }
+
+    button[type="submit"] {
+      background-color: var(--primary);
+      color: #ffffff;
+      border: none;
+      padding: 0.95rem;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    button[type="submit"]:hover {
+      background-color: var(--primary-light);
+    }
+
+    footer {
+      background-color: #15221a;
+      color: #b8c4bc;
+      padding: 2.5rem 5%;
+      font-size: 0.9rem;
+    }
+
+    .footer-inner {
+      max-width: 1050px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+
+    .footer-creds {
+      color: #ffffff;
+      font-weight: 500;
+    }
+
+    footer a {
+      color: #e6b078;
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2rem; }
+      .contact-wrapper { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .species-list { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">Orell <span>Feral Animal Control</span></div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#compliance">Licensing</a>
+      <a href="#regions">Regions</a>
+      <a href="#contact" class="nav-cta">Request Quote</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="badge">NSW Vertebrate Pest Management</div>
+      <h1>Professional Feral Animal Control Across NSW</h1>
+      <p>Ground-based vertebrate pest programs for farms, rural estates, commercial sites, and local councils across Greater Sydney, the Southern Highlands, and Central West NSW.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary">Request Property Assessment</a>
+        <a href="tel:0466118354" class="btn-secondary">Call 0466 118 354</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="trust-strip">
+    <div class="trust-grid">
+      <div class="trust-item"><strong>NSW Firearms Licence</strong>406192284</div>
+      <div class="trust-item"><strong>Accreditation</strong>AHCPMG304</div>
+      <div class="trust-item"><strong>ABN</strong>16 639 463 728</div>
+      <div class="trust-item"><strong>Phone</strong><a href="tel:0466118354">0466 118 354</a></div>
+    </div>
+  </div>
+
+  <section id="services">
+    <div class="container">
+      <h2 class="section-title">Target Species &amp; Capabilities</h2>
+      <p class="section-subtitle">Practical vertebrate pest control tailored to rural land, council reserves, and peri-urban properties across NSW.</p>
+      <div class="grid-2">
+        <div class="card">
+          <h3>Managed Pest Species</h3>
+          <ul class="species-list">
+            <li>Feral Pigs</li>
+            <li>Feral Deer</li>
+            <li>Wild Dogs</li>
+            <li>Red Foxes</li>
+            <li>Feral Goats</li>
+            <li>Feral Cats</li>
+            <li>Rabbits</li>
+            <li>Permitted Native Culls*</li>
+          </ul>
+          <div class="permit-note">*Native culls conducted only under a valid NSW NPWS permit held by the landholder.</div>
+        </div>
+        <div class="card">
+          <h3>Field Capabilities</h3>
+          <ul class="capabilities-list">
+            <li><strong>Low-Noise Air Rifles:</strong> Quiet control for rabbits and feral cats near houses and livestock.</li>
+            <li><strong>Thermal &amp; Night Operations:</strong> Low-disturbance night programs using thermal optics.</li>
+            <li><strong>Boundary Safety:</strong> Strict buffer zones, verified backstops, and noise-conscious scheduling.</li>
+            <li><strong>Cull Reporting:</strong> Post-job logs for landholder and council biosecurity records.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="compliance" class="bg-white-section">
+    <div class="container">
+      <h2 class="section-title">Licensing &amp; Duty of Care</h2>
+      <div class="cred-grid">
+        <div class="cred-box"><h4>NSW Credentials</h4><p>Firearms Licence <strong>406192284</strong> | ABN <strong>16 639 463 728</strong></p></div>
+        <div class="cred-box"><h4>AHCPMG304</h4><p>Accredited in humane animal destruction following national SOPs.</p></div>
+        <div class="cred-box"><h4>Risk Management</h4><p>Pre-operation site inspections, exclusion zones, and livestock checks.</p></div>
+        <div class="cred-box insurance-placeholder"><h4>Public Liability</h4><p><strong>[Add Insurer &amp; Policy Number Once Issued]</strong></p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="regions">
+    <div class="container">
+      <h2 class="section-title">NSW Service Regions</h2>
+      <div class="region-grid">
+        <div class="region-card"><h4>Macarthur &amp; South West</h4><p>Camden, Campbelltown, Wollondilly, Picton, Wilton.</p></div>
+        <div class="region-card"><h4>Western Parkland &amp; Nepean</h4><p>Penrith, Mulgoa, Luddenham, Hawkesbury, Outer West.</p></div>
+        <div class="region-card"><h4>Southern Highlands</h4><p>Mittagong, Bowral, Moss Vale, Southern Tablelands, Great Dividing Range.</p></div>
+        <div class="region-card"><h4>Central West NSW</h4><p>Lithgow, Oberon, Bathurst, Orange, Central Tablelands.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="bg-white-section">
+    <div class="container">
+      <h2 class="section-title">Request a Property Assessment</h2>
+      <p class="section-subtitle">Share your location and pest concerns and we will arrange a discussion or site inspection.</p>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <h3>Contact Details</h3>
+          <p>Servicing private landholders, farms, commercial estates, and NSW councils.</p>
+          <div class="detail-block">
+            <strong>Mobile:</strong> <a href="tel:0466118354">0466 118 354</a><br>
+            <strong>Email:</strong> <a href="mailto:info@orellferalcontrol.com.au">info@orellferalcontrol.com.au</a><br>
+            <strong>ABN:</strong> 16 639 463 728<br>
+            <strong>Firearms Licence:</strong> 406192284<br>
+            <strong>Accreditation:</strong> AHCPMG304<br>
+            <strong>Public Liability:</strong> [Pending / Add Policy No.]
+          </div>
+        </div>
+            <form action="https://formsubmit.co" method="POST">
+          <input type="hidden" name="_subject" value="New Assessment Request - Orell Feral Animal Control">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="text" name="name" placeholder="Full Name *" required>
+          <input type="tel" name="phone" placeholder="Phone Number *" required>
+          <input type="text" name="suburb" placeholder="Suburb / Town &amp; Property Size *" required>
+          <textarea name="message" rows="4" placeholder="Target pests, livestock, and property notes..." required></textarea>
+          <button type="submit">Submit Assessment Request</button>
+        </form>
+
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <div class="footer-creds">Orell Feral Animal Control</div>
+        <div>ABN: 16 639 463 728 | Licence: 406192284 | AHCPMG304</div>
+        <div><a href="tel:0466118354">0466 118 354</a> | <a href="mailto:info@orellferalcontrol.com.au">info@orellferalcontrol.com.au</a></div>
+      </div>
+      <div>&copy; 2026 Orell Feral Animal Control.</div>
+    </div>
+  </footer>
+</body>
+</html>
+
+
+
